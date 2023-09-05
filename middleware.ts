@@ -5,7 +5,7 @@ export async function middleware(req: NextRequest, res: NextResponse) {
   const cookie = req.cookies.get("token")?.value;
   const url = req.nextUrl.clone();
 
-  if (cookie === undefined) {
+  if (!cookie) {
     url.pathname = "/auth";
     return NextResponse.redirect(url);
   }

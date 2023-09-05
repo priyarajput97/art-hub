@@ -26,7 +26,7 @@ const useAuth = () => {
         authError: null,
         loading: false,
       });
-      router.push("/");
+      router.push("/profile");
     } catch (error: any) {
       setAuthState({
         user: null,
@@ -56,7 +56,7 @@ const useAuth = () => {
         authError: null,
         loading: false,
       });
-      router.push("/");
+      router.push("/profile");
     } catch (error: any) {
       setAuthState({
         user: null,
