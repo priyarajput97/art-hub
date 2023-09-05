@@ -10,7 +10,7 @@ const PostsGrid = () => {
   return (
     <div className="grid grid-cols-3 gap-3">
       {[1, 2, 3, 4, 5, 6, 7, 8].map((post) => (
-        <Link href={`post/${post}`}>
+        <Link href={`post/${post}`} key={post}>
           <div className="relative group">
             <img
               src={src}
